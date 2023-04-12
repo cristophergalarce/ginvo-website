@@ -33,11 +33,11 @@ $font-size-90px: 90px
 @mixin typography-style
 	font-family: $font
 	font-size: $font-size-base
-	color: $color-dark-90
+	color: var(--color-text-body)
 
 @mixin text-style-h1
 	font-size: $font-size-90px
-	font-weight: $font-bold
+	font-weight: $font-black
 	font-style: normal
 	line-height: 1.15em
 	letter-spacing: -.04em
@@ -88,38 +88,31 @@ $font-size-90px: 90px
 
 @mixin text-style-body
 	font-size: $font-size-18px
-	font-weight: $font-regular
+	font-weight: $font-medium
 	font-style: normal
 	line-height: 1.6em
 	// description
 
 @mixin text-style-body-small
 	font-size: $font-size-base
-	font-weight: $font-regular
+	font-weight: $font-medium
 	font-style: normal
 	line-height: 1.6em
 
 @mixin text-style-buttons
 	font-size: $font-size-18px
-	font-weight: $font-semibold
+	font-weight: $font-medium
 	font-style: normal
 	line-height: 1.5em
 
 @mixin text-style-buttons-small
 	font-size: $font-size-base
-	font-weight: $font-semibold
+	font-weight: $font-medium
 	font-style: normal
 	line-height: 1.5em
 
 @mixin text-style-menu
 	font-size: $font-size-18px
-	font-weight: $font-regular
+	font-weight: $font-medium
 	font-style: normal
 	line-height: 1.5em
-
-@mixin text-gradient-main($background, $color)
-	background-image: $background
-	background-clip: text
-	color: $color
-	box-decoration-break: clone // Fix the wrap text unexpect behavior on mobile
-	// Interfiere con el background del button al agregarlo al text

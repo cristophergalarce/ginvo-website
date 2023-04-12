@@ -1,4 +1,3 @@
-import ButtonSide from "../button/button-side"
 import ButtonCta from "../button/button-cta"
 
 const Hero = (props) => {
@@ -7,7 +6,7 @@ const Hero = (props) => {
 			<main className='hero-content'>
 				<div className='hero-group-texts'>
 					<h1 className='hero-title'>
-						<span className='hero-title-gradient'>
+						<span className='hero-title-color'>
 							{props.title1}
 						</span>
 						<br />
@@ -19,10 +18,7 @@ const Hero = (props) => {
 				</div>
 				<div className='hero-group-buttons'>
 					<ButtonCta
-						text='Get it now'
-					/>
-					<ButtonSide
-						text="Or book a free demo"
+						text='Avísame cuando estés listo'
 					/>
 				</div>
 			</main>
