@@ -1,11 +1,11 @@
 function FeatureBox(props) {
 	return (
 		<>
-			<div className="feature-content-big">
+			<div className="feature-content">
 				<figure
-					className="icon-box"
+					className="feature-image"
 				>
-					{props.icon}
+					{props.image}
 				</figure>
 				<div
 					className="feature-group-texts"

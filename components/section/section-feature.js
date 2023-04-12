@@ -12,6 +12,7 @@ function SectionFeature(props) {
 		<>
 			<section
 				id='Discover'
+				className='section-container'
 			>
 				<div
 					className='section-group-texts'
