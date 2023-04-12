@@ -1,12 +1,11 @@
 @use '../../styles/tokens' as *
 
-.feature-content-big
+.feature-content
 	background: var(--background-section)
 	width: 324px
-	padding: 120px 0
 	display: grid
-	grid-auto-flow: column
-	column-gap: 24px
+	grid-auto-flow: row
+	border-radius: 10px 
 	+breakpoint-tablet
 		grid-auto-flow: row
 		row-gap: 16px
@@ -36,21 +35,21 @@
 	text-align: left
 	display: grid
 	grid-auto-flow: row
-	row-gap: 16px
+	row-gap: 4px
+	padding: 24px
 	+breakpoint-tablet
 		text-align: center
 
 .feature-title
 	color: var(--color-text-title)
-	@include text-style-title
+	@include text-style-body
+	font-weight: $font-semibold
 	+breakpoint-mobile
 		+text-style-title-small
 
 .feature-description
-	+text-style-body
+	@include text-style-note
 	color: var(--color-text-body)
 	+breakpoint-tablet
 		margin: 0 auto
 		max-width: 180px
-	+breakpoint-mobile
-		+text-style-body-small
