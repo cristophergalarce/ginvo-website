@@ -3,12 +3,13 @@
 
 //	1.1 Colors Variables
 
-$color-dark-90: #19192E
-$color-dark-80: #202037
-$color-dark-70: #282845
+$color-dark-90: #101014
+$color-dark-80: #1B1E26
+$color-dark-70: #2B2F3B
 $color-dark-40: #8181A1
 $color-gray-60: #5D87A8
 $color-gray-50: #859FB4
+$color-gray-40: #A1A3AA
 $color-gray-10: hsla(210, 14%, 99%, 1)
 $color-sky: hsla(207, 100%, 63%, 1)
 $color-sky-40: hsla(207, 100%, 70%, 1)
@@ -21,35 +22,25 @@ $color-accent-white-30: rgba($color-accent-white, .3)
 $color-accent-white-20: rgba($color-accent-white, .3)
 $color-accent-white-10: rgba($color-accent-white, .1)
 $color-accent-white-05: rgba($color-accent-white, .01)
-$color-main-50: #AF48FF
+$color-main-50: #5E5CE5
+$color-main-30: #5E5CE5
 $color-main-20: #F5EDFF
 $color-main-10: #f5f2f8
 $color-main-05: #FBFBFC
 $color-base-50: #F206B0
 $color-layout-05: #FBFBFC
-$gradient-background-light: linear-gradient( #F5EEFF 0%, rgba(255, 255, 255, 0) 100%)
-$gradient-main: radial-gradient(200% 200% at 0% 0%, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%)
-$gradient-sea: radial-gradient(100% 20.94% at 100% 0%, #00FFB9 0%, #3BCCE1 53.12%, #1E7AF5 100%)
-$gradient-dark: radial-gradient(120% 320% at 0% 0%, #300055 0%, $color-dark-90 100%)
-$gradient-dark-smooth: radial-gradient(50% 50% at 50% 0%, rgba(#33015A, .5) 0%, rgba($color-dark-90, .5) 100%)
 
 [data-theme='light']
-	--background-color-a: #{$gradient-sea}
-	--background-color-b: #{$gradient-main}
+	--background-color: #{$color-layout-05}
 	--background-section: #{$color-main-05}
 	--background-button-cta: #{$color-accent-white}
 	--background-button-cta-hover: #{$color-accent-white-80}
-	--color-text-cta-gradient: #{$gradient-main}
-	--color-text-cta: transparent
 	--background-button-side: #{$color-accent-white-10}
 	--background-button-side-hover: #{$color-accent-white-20}
+	--color-text-cta: transparent
 	--color-text-title: #{$color-dark-90}
+	--color-text-title-high: #{$color-main-50}
 	--color-text-body: #{$color-gray-60}
-	--color-text-body-bg: #{$color-accent-white-65}
-	--color-text-hero: #{$color-accent-white}
-	--color-text-hover: #{$color-main-50}
-	--color-text-main-gradient: transparent
-	--color-text-main: #{$color-accent-white}
 	--color-text-link: #{$color-accent-white-65}
 	--color-text-link-hover: #{$color-accent-white}
 	--border: #{$color-accent-white-10}
@@ -57,22 +48,16 @@ $gradient-dark-smooth: radial-gradient(50% 50% at 50% 0%, rgba(#33015A, .5) 0%, 
 	--icon-box: #{$color-accent-white-10}
 	--icon-box-hover: #{$color-accent-white-20}
 [data-theme='dark']
-	--background-color-a: #{$color-dark-90}
-	--background-color-b: #{$gradient-dark}
-	--background-section: #{$gradient-dark-smooth}
-	--background-button-cta: #{$gradient-main}
-	--background-button-cta-hover: #{$color-accent-white-80}
-	--color-text-cta-gradient: transparent
-	--color-text-cta: #{$color-accent-white}
+	--background-color: #{$color-dark-90}
+	--background-section: #{$color-dark-80}
+	--background-button-cta: #{$color-main-50}
+	--background-button-cta-hover: #{$color-main-30}
 	--background-button-side: #{$color-dark-80}
 	--background-button-side-hover: #{$color-dark-70}
+	--color-text-cta: #{$color-accent-white}
 	--color-text-title: #{$color-accent-white}
-	--color-text-body: #{$color-dark-40}
-	--color-text-body-bg: #{$color-dark-40}
-	--color-text-hero: #{$color-accent-white}
-	--color-text-hover: #{$color-accent-white}
-	--color-text-main-gradient: #{$gradient-main}
-	--color-text-main: transparent
+	--color-text-title-high: #{$color-main-50}
+	--color-text-body: #{$color-gray-40}
 	--color-text-link: #{$color-dark-40}
 	--color-text-link-hover: #{$color-main-50}
 	--border: #{$color-accent-white-10}
